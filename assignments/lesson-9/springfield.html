@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="update weather">
+    <meta name="keywords" content="weather, weather update">
+    <meta name="author" content="Christopher Meza">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Groove Forecast</title>
+    <link rel="stylesheet" type="text/css" href="style/normalize-9.css">
+    <link rel="stylesheet" type="text/css" href="style/main-9.css">
+    <link rel="stylesheet" type="text/css" href="style/medium-9.css">
+    <link rel="stylesheet" type="text/css" href="style/large-9.css">
+    <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Annie Use Your Telescope';
+            font-size: 22px;
+        }
+    </style>
+    <style>
+        body {
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <figure>
+            <img src="images/franklin1small.png" alt="logo" srcset="images/franklin1large.png 1200w,
+                    images/franklin1medium.png 800w,
+                    images/franklin1small.png 400w">
+        </figure>
+        <h1>Family Groove Forecast</h1>
+        <h2>Prepare Your Child's Outfit</h2>
+
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+    </header>
+
+    <nav>
+        <ul style="list-style-type: none" class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="franklin-9.html">Franklin</a></li>
+            <li><a href="greenville-9.html">Greenville</a></li>
+            <li><a href="springfield.html">Springfield</a></li>
+            <li><a href="form.html">Storm Center</a></li>
+            <li><a href="gallery-9.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+       
+       <h1 id="name"><!--Name of the City--></h1>
+       
+        <figure>
+           <img srcset="images/landscape3large.jpg 1200w,
+                images/landscape3medium.jpg 800w,
+                images/landscape3small.jpg 400w" alt="banner">
+             </figure>
+        <section class="weather-summary">
+            <h3>Today's Weather Summary</h3>
+            <div class="highlow">
+                <p>High: 
+                    <span id="high">81</span>&#8457; </p>
+                <p>Low:
+                    <span id="low">44</span>&#8457;</p>
+            </div>
+            <div class="current">
+                Sunny
+                <p></p>
+                <picture>
+                    <img src="images/franklin3small.png" alt="sun" srcset="images/franklin3large.png 1200w,
+                            images/franklin3medium.png 800w,
+                            images/franklin3small.png 400w">
+                </picture>
+            </div>
+
+            <div class="conditions">
+                <p>Precipitation: 0%</p>
+                <p>Wind Speed:
+                    <span id="windspeed">5</span>mph</p>
+                <p>Wind Chill:
+                    <span id="windchill"></span> &#8457;</p>
+                <p></p>
+            </div>
+        </section>
+
+        <section class="forecast">
+
+            <h3>Ten Day Forecast</h3>
+
+            <table>
+                <thead>
+
+                    <tr>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                        <th>Day 6</th>
+                        <th>Day 7</th>
+                        <th>Day 8</th>
+                        <th>Day 9</th>
+                        <th>Day 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <article>
+            <h3>Franklin Breaks Record</h3>
+            <img src="images/franklin4small.png" alt="article-landscape" srcset="images/franklin4large.png 1200w,
+                    images/franklin4medium.png 800w,
+                    images/franklin4small.png 400w">
+            <p class="town-article">The weather here in Franklin has been the greatest ever! 
+            </p>
+        </article>
+    </main>
+
+    <footer>
+        <section class="contact">
+            Contact information 999.999.9999 123 Main St. Anytown, US 99999 Google Map
+        </section>
+        <section class="footer-bar">&copy;2018 | All Rights Reserved | Family Groove Forecast | <span id="currentdate">Current Date Placeholder</span>
+        </section>
+    </footer>
+
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/springfield.js"></script>
+</body>
+
+</html>

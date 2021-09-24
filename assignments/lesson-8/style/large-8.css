@@ -1,0 +1,46 @@
+@media only screen and (min-width: 64em) {
+    header figure img {
+        width: 1000px;
+    }
+
+    header h1 {
+        font-size: 60px;
+        letter-spacing: 5px;
+        line-height: 0px;
+
+    }
+
+    header h2 {
+        letter-spacing: 3px;
+        text-align: center;
+        font-size: 40px;
+        line-height: 45px;
+
+    }
+
+    main figure img {
+        width: 50%;
+
+    }
+    .current picture img {
+        width: 30%;
+        height: 400px;
+    }
+    .current picture img {
+        width: 20%;
+        height: 300px;
+    }
+    
+    
+    nav {
+        margin: 0 auto;
+        width: 80%;
+    }
+    
+    /*gallery*/
+    .gallery-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+

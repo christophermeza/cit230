@@ -1,0 +1,32 @@
+body {
+    
+       text-align: center;
+       background-color: black
+}
+img {
+    border-radius: 8px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: gainsboro;
+    font-size: px;
+}
+
+p {
+    color: gainsboro;
+    font-size: 24px;
+}
+
+a:any-link {
+    color: gainsboro;
+    text-decoration: none;
+    
+}
+
+ul {
+    list-style-type: none;
+}

@@ -1,0 +1,50 @@
+@media only screen and (min-width: 37.5em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    nav button {
+        display: none;
+    }
+    /* responsive images */
+    main figure img {
+        width: 100%;
+    }
+    nav ul li.active a {}
+    nav {
+        padding-top: 26px;
+        padding-left: 50px;
+    }
+    nav ul {
+        display: block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    nav ul li {
+        display: inline;
+        float: right;
+    }
+    nav ul li a {
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-style: normal;
+        font-size: 16px;
+        display: block;
+        color: #000;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    nav ul li a:hover {
+        color: grey;
+    }
+    section .trail {
+        float: right;
+        margin: 0 2% .50rem 2%;
+    }
+    footer aside {
+        text-align: center;
+        padding-top: 170px;
+    }
+    footer p {
+        text-align: left;
+    }
+}

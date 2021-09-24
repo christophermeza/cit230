@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="update weather">
+    <meta name="keywords" content="weather, weather update">
+    <meta name="author" content="Christopher Meza">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Groove Forecast</title>
+    <link rel="stylesheet" type="text/css" href="style/normalize-8.css">
+    <link rel="stylesheet" type="text/css" href="style/main-8.css">
+    <link rel="stylesheet" type="text/css" href="style/medium-8.css">
+    <link rel="stylesheet" type="text/css" href="style/large-8.css">
+    <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Annie Use Your Telescope';
+            font-size: 22px;
+        }
+    </style>
+    <style>
+        body {
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <figure>
+            <img src="images/franklin1small.png" alt="logo" srcset="images/franklin1large.png 1200w,
+                    images/franklin1medium.png 800w,
+                    images/franklin1small.png 400w">
+        </figure>
+        <h1>Family Groove Forecast</h1>
+        <h2>Prepare Your Child's Outfit</h2>
+
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+    </header>
+    <nav>
+        <ul style="list-style-type: none" class="navigation">
+            <li><a href="franklin-8.html">Home</a></li>
+            <li><a href="franklin-8.html">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="form.html">Storm Center</a></li>
+            <li><a href="gallery-8.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Report the Weather</h1>
+        <p>This website is to report any unusual or life threatening weather. Please be as descriptive as possible.</p>
+        <form action="thanks.html" method="get">
+            <fieldset name="User Information">
+                <div >
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" title="A minimum of five characters is required." pattern="[A-Za-z- ]{5,}" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" title="Email" placeholder="name@domain.com">
+                </div>
+                <div>
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="tel" name="usrtel" title="Ten digits are required." pattern="[0-9]{10}" placeholder="xxxxxxxxxx" required>
+                </div>
+                <div>
+                    <label for="zipCode">Zip Code</label>
+                    <input type="zipcode" name="zipcode" required>
+                </div>
+
+            </fieldset>
+            <fieldset name="Storm Information">
+
+                <div>
+                    <label for="date">Date:</label>
+                    <input type="date">
+                </div>
+                <div>
+
+                    <label for="stormType">What is the weather's condition?</label>
+
+                    <input list="stormType">
+                    <datalist id="stormType">
+                        <option type="radio" name="condition" value="Flash Flood" checked>Flash Flood<br>
+                        <option type="radio" name="condition" value="Hail" checked>Hail<br>
+                        <option type="radio" name="condition" value="Hurricane" checked>Hurricane<br>
+                        <option type="radio" name="condition" value="Thunder Storm">Thunder Storm<br>
+                        <option type="radio" name="condition" value="Tornado">Tornado<br>
+                    </datalist>
+                </div>
+
+                <div>
+                    <label for="rating">Rating (1 to 10)</label>
+                    <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span><br>
+                </div>
+
+                <div>
+                    <label for="stormRegion">Storm Region</label>
+                    <select name="stormRegion">
+                        <option selected disabled="disabled">Select Region ...</option>
+                        <option value="springfield">Springfield</option>
+                        <option value="greenfield">Greenfield</option>
+                        <option value="franklin">Franklin</option>
+                    </select>
+                </div>
+
+
+                <div>
+                    <span>Are you in danger?</span><br>
+                    <input type="radio" id="yes" name="danger" value="Yes" required>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="maybe" name="danger" value="maybe" required>
+                    <label for="maybe">Maybe</label>
+                    <input type="radio" id="no" name="danger" value="No" required>
+                    <label for="No">No</label>
+                </div>
+
+                <div>
+                      <label for="comments">Other Comments:</label><br>
+                      <textarea name="comments" row="5" col="60"></textarea>
+                </div>
+            </fieldset>
+
+
+            <input type="submit" value="Save">
+        </form>
+    </main>
+</body>
+
+
+<footer>
+
+    <section class="contact">
+        Contact Information 999.999.9999 123 Main St. Anytown, US 99999 Google Map
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Family Groove Forecast | <span id="currentdate">Current Date Placeholder</span>
+    </section>
+</footer>
+
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/windchill.js"></script>
+<script>
+    function adjustRating(rating) {
+        document.getElementById("ratingvalue").innerHTML = rating;
+    }
+</script>
+
+
+</html>

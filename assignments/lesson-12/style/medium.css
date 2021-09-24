@@ -1,0 +1,82 @@
+@media only screen and (min-width: 800px) {
+
+    nav button {
+        display: none;
+    }
+
+    section.forecast {
+        display: block;
+    }
+
+    header {
+        line-height: 30px;
+    }
+
+    header h1 {
+        letter-spacing: 2px;
+    }
+
+
+    /* Responsive table */
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 70%;
+        border: 1px solid #ddd;
+        margin: auto;
+    }
+
+    tr th {
+        color: black;
+        background-color: lightgray;
+    }
+    
+    th,
+    td {
+        background-color: azure;
+        text-align: center;
+        padding: 8px;
+    }
+
+
+
+    /*NAVIGATION BAR*/
+    header,
+    nav {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .hamburger {
+        display: none;
+    }
+    .navigation {
+        background-color: #333;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navigation li {
+        display: inline-block;
+        margin-left: .25rem;
+        padding: 8px;
+    }
+    .navigation a {
+        display: block;
+        color: chartreuse;
+        padding: .5rem;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .navigation a:hover {
+        color: #000;
+        background-color: #777;
+    }
+
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head w3-include-html="/modules/head-mod.html">
+    <title>Springfield</title>
+</head>
+
+<body>
+
+    <script src="scripts/w3.js"></script>
+    <header w3-include-html="/modules/header-mod.html">
+    </header>
+    <nav>
+        <ul style="list-style-type: none" class="navigation" id="mainmenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="franklin.html">Franklin</a></li>
+            <li><a href="greenville.html">Greenville</a></li>
+            <li><a href="springfield.html">Springfield</a></li>
+            <li><a href="form.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <h1 id="name">
+            <!--Name of the City-->
+        </h1>
+
+        <figure>
+            <img srcset="images/landscape3large.jpg 1200w,
+                images/landscape3medium.jpg 800w,
+                images/landscape3small.jpg 400w" alt="banner">
+        </figure>
+        <section class="weather-summary">
+            <h3>Today's Weather Summary</h3>
+            <div class="highlow">
+                <p>High:
+                    <span id="high">81</span>&#8457; </p>
+                <p>Low:
+                    <span id="low">44</span>&#8457;</p>
+            </div>
+            <div class="current">
+                Sunny
+                <p></p>
+                <picture>
+                    <img src="images/franklin3small.png" alt="sun" srcset="images/franklin3large.png 1200w,
+                            images/franklin3medium.png 800w,
+                            images/franklin3small.png 400w">
+                </picture>
+            </div>
+
+            <div class="conditions">
+                <p>Precipitation: 0%</p>
+                <p>Wind Speed:
+                    <span id="windspeed">5</span>mph</p>
+                <p>Wind Chill:
+                    <span id="windchill"></span> &#8457;</p>
+                <p></p>
+            </div>
+        </section>
+
+        <section class="forecast">
+
+            <h3>Ten Day Forecast</h3>
+
+            <table>
+                <thead>
+
+                    <tr>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                        <th>Day 6</th>
+                        <th>Day 7</th>
+                        <th>Day 8</th>
+                        <th>Day 9</th>
+                        <th>Day 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <article>
+            <h3>Springfield Breaks Record</h3>
+            <img src="images/franklin4small.png" alt="article-landscape" srcset="images/franklin4large.png 1200w,
+                    images/franklin4medium.png 800w,
+                    images/franklin4small.png 400w">
+            <p class="town-article">The weather here in Franklin has been the greatest ever!
+            </p>
+        </article>
+    </main>
+
+    <footer w3-include-html="/modules/footer-mod.html">
+
+    </footer>
+
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/springfield.js"></script>
+    <script src="scripts/w3includehtml.js"></script>
+    <script src="scripts/wayfinding.js"></script>
+</body>
+
+</html>

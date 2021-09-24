@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="update weather">
+    <meta name="keywords" content="weather, weather update">
+    <meta name="author" content="Christopher Meza">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Groove Forecast</title>
+    <link rel="stylesheet" type="text/css" href="style/normalize-9.css">
+    <link rel="stylesheet" type="text/css" href="style/main-9.css">
+    <link rel="stylesheet" type="text/css" href="style/medium-9.css">
+    <link rel="stylesheet" type="text/css" href="style/large-9.css">
+    <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Annie Use Your Telescope';
+            font-size: 22px;
+        }
+
+    </style>
+    <style>
+        body {
+            background-color: cornflowerblue;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <figure>
+            <img src="images/franklin1small.png" alt="logo" srcset="images/franklin1large.png 1200w,
+                    images/franklin1medium.png 800w,
+                    images/franklin1small.png 400w">
+        </figure>
+        <h1>Family Groove Forcast</h1>
+        <h2>Prepare Your Child's Outfit</h2>
+
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+    </header>
+
+    <nav>
+        <ul style="list-style-type: none" class="navigation" id="mainmenu">
+            <li><a href="franklin-9.html">Home</a></li>
+            <li><a href="franklin-9.html">Franklin</a></li>
+            <li><a href="greenville-9.html">Greenville</a></li>
+            <li><a href="springfield.html">Springfield</a></li>
+            <li><a href="form.html">Storm Center</a></li>
+            <li><a href="gallery-9.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <h4>Our Gallery</h4>
+        <h5>Citizens enjoy the weather!</h5>
+
+
+
+
+
+        <div class=gallery-container>
+            <div class="gallery-item">
+                <a target="_blank" href="images/041017_weather_dm_1_142415681.jpg"><img src="images/041017_weather_dm_1_142415681.jpg" alt="Relaxing in the park." width="600" height="400"></a>
+                <p>Individuals enjoying the weather in the city's park.</p>
+            </div>
+
+            <div class="gallery-item">
+                <a target="_blank" href="images/New%20York.jpg"><img src="images/New%20York.jpg" alt="Running in the park." width="600" height="400"></a>
+                <p>Children running in the park.</p>
+            </div>
+
+
+            <div class="gallery-item">
+                <a target="_blank" href="images/activity_10.jpg"><img src="images/activity_10.jpg" alt="Mom swinging child." width="600" height="400"></a>
+                <p>Child being swung in the park.</p>
+            </div>
+
+            <div class="gallery-item">
+                <a target="_blank" href="images/WEATHER-ANCHOR-MAMA_STACY-ANN-GOODEN_FAMILY-PHOTO_800PX.jpg"><img src="images/WEATHER-ANCHOR-MAMA_STACY-ANN-GOODEN_FAMILY-PHOTO_800PX.jpg" alt="Family picture." width="600" height="400"></a>
+                <p>Family taking a picture in the city.</p>
+            </div>
+
+            <div class="gallery-item">
+                <a target="_blank" href="images/bigstock-Group-Of-Friends-Relaxing-Outs-95545472.jpg"><img src="images/bigstock-Group-Of-Friends-Relaxing-Outs-95545472.jpg" alt="Family picture in the park." width="600" height="400"></a>
+                <p>Family enjoying each others company in the park.</p>
+            </div>
+
+            <div class="gallery-item">
+                <a target="_blank" href="images/picnic-1-resized.jpg"><img src="images/picnic-1-resized.jpg" alt="Famiy in the park." width="600" height="400"></a>
+                <p>Family having a picnic in the park.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <section class="contact">
+            Contact information placeholder 999.999.9999 123 Main St. Anytown, US 99999 Google Map
+        </section>
+        <section class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span>
+        </section>
+    </footer>
+
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/openweathermap.js"></script>
+    <script src="scripts/wayfinding.js"></script>
+</body>
+
+</html>

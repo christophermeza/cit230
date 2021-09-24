@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head w3-include-html="modules/head.html">
+    <title>Register</title>
+</head>
+
+<body>
+    <header w3-include-html="modules/header.html">
+        <script src="scripts/w3.js"></script>
+    </header>
+
+    <nav w3-include-html="modules/nav.html">
+    </nav>
+
+    <main>
+        <h4>Register!</h4>
+
+        <form action="thxregister.html" method="get">
+            <fieldset name="User Information">
+                <div>
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" title="A minimum of five characters is required." pattern="[A-Za-z- ]{5,}" required>
+                </div>
+                <div>
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" title="Email" placeholder="name@domain.com">
+                </div>
+                <div>
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="tel" name="usrtel" title="Ten digits are required." pattern="[0-9]{10}" placeholder="xxxxxxxxxx" required>
+                </div>
+                <div>
+                    <label for="date">Date of Birth</label>
+                    <input type="date">
+                </div>
+               
+            </fieldset>
+            <input type="submit" value="Register!">
+        </form>
+    </main>
+
+    <footer w3-include-html="modules/footer.html">
+    </footer>
+
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/w3.js"></script>
+    <script src="scripts/modularize.js"></script>
+    <script src="scripts/hamburger.js"></script>
+</body>
+</html>
+
+
+

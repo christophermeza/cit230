@@ -1,0 +1,117 @@
+{
+    box-sizing: border-box;
+}
+
+head body {
+    background-image: url(images/99999.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Wendy One', sans-serif;
+}
+
+header,
+nav,
+main,
+footer {
+    color: blueviolet;
+    text-align: center;
+    letter-spacing: 0.005px;
+    line-height: 20px;
+    margin: 10px;
+
+}
+
+header {}
+
+header h1 {
+    font-size: 30px;
+}
+
+header h2 {
+    font-size: 18px;
+}
+
+header img {
+    min-width: 40%;
+    max-width: 100%;
+    padding-bottom: 18px;
+}
+
+header .subheading {}
+
+nav {}
+
+nav button {}
+
+nav ul {}
+
+nav ul li {}
+
+nav ul li a {}
+
+nav ul li.active a {}
+
+nav ul li a:hover {}
+
+main {
+    padding: 10px;
+}
+
+main h2 {}
+
+main figure {
+    min-width: 40%;
+    max-width: 100%;
+    position: fixed;
+}
+
+main figure img {
+
+    footer {
+        font-size: 12px;
+        padding-top: 100px;
+        bottom: 0;
+        width: 100%;
+    }
+
+    /*navigation bar*/
+    .hamburger {}
+
+    .navigation {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .navigation li {
+        display: none;
+    }
+
+    .navigation.responsive {
+        position: relative;
+    }
+
+    .navigation.responsive li {
+        background-color: #333;
+        display: block;
+        width: 100%;
+        margin: 2px 0;
+        border: 1px solid #ddd;
+    }
+
+    .navigation.responsive li a {
+        padding: 1rem;
+        text-align: center;
+        display: block;
+        text-decoration: none;
+        color: #eee;
+    }
+
+    .navigation.responsive li a:hover {
+        color: #000;
+        background-color: #777;
+    }
+
+    

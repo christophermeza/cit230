@@ -1,0 +1,89 @@
+@media only screen and (min-width: 37.5em) {
+
+
+    nav button {
+        display: none;
+    }
+
+    section.forecast {
+        display: block;
+    }
+
+    ul {
+        display: flex;
+
+        justify-content: space-around;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {}
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #111;
+    }
+
+    header figure img {
+        width: 600px;
+    }
+
+    header h1 {
+        font-size: 50px;
+        letter-spacing: 2px;
+        line-height: 0px;
+
+    }
+
+    header h2 {
+        letter-spacing: 2px;
+        text-align: center;
+        font-size: 30px;
+
+    }
+
+    main figure img {
+        width: 80%;
+
+    }
+    .current picture img {
+        width: 30%;
+        height: 200px;
+    }
+
+    article img {
+        width: 49%;
+        height: 280px;
+    }
+
+    /* Responsive table */
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 70%;
+        border: 1px solid #ddd;
+        margin: auto;
+    }
+
+    tr th {
+        color: skyblue;
+        background-color: darkblue;
+    }
+    th,
+    td {
+        background-color: azure;
+        text-align: left;
+        padding: 8px;
+        text-align: center;
+    }
+}

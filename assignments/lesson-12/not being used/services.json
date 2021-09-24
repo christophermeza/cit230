@@ -1,0 +1,16 @@
+{
+    "services": [
+        {
+            "name": "Drive Train Clean",
+            "price": 32.00
+        },
+        {
+            "name": "Minor Tune",
+            "price": 40.00
+        },
+        {
+            "name": "Major Tune",
+            "price": 60.00
+        },
+    ]
+}
